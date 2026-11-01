@@ -1,45 +1,31 @@
-# Hang Yi — Personal website
+# Hang Yi — Personal Website
 
-An English academic homepage based on al-folio.
+**[Visit my website → traelinb.github.io](https://traelinb.github.io/)**
 
-## Edit content
+My personal academic website, featuring my background, research in tabular data synthesis, and CV.
 
-- Introduction: `_pages/about.md`
-- Research: `_pages/research.md`
-- CV: `_data/cv.yml`
-- Public profile links: `_data/socials.yml`
-- Name and hosting URL: `_config.yml`
+## Update content
 
-The initial version contains education and ongoing research work. Add an email address, portrait, downloadable CV, and publications when ready.
+| Content | Source |
+| --- | --- |
+| Introduction, education, and profile links | [`_pages/about.md`](_pages/about.md) |
+| Research | [`_pages/research.md`](_pages/research.md) |
+| CV | [`_data/cv.yml`](_data/cv.yml) |
+| Styles | [`tools/preview-assets/css/preview.css`](tools/preview-assets/css/preview.css) |
+| Browser icon | [`assets/img/favicon-ginkgo.png`](assets/img/favicon-ginkgo.png) |
 
-## Local preview
+## Preview and deploy
 
-Run `python3 tools/render_preview.py` and open `dist/index.html`. The preview reads the Markdown and CV source files and uses locally cached al-folio CSS. It requires Python Markdown and the YAML parser bundled with Ruby. It does not validate the native Jekyll build.
+Requires Python 3 with [Python-Markdown](https://python-markdown.github.io/) and Ruby for YAML parsing.
 
-## Full al-folio build
-
-Use Ruby 3.3 and a compatible Bundler, then run:
+Generate the static website:
 
 ```bash
-bundle install
-npm ci
-bundle exec jekyll serve
+python3 tools/render_preview.py
 ```
 
-The site is configured for a root domain with an empty baseurl. Its GitHub Pages address is https://traelinb.github.io. A project-subdirectory deployment needs its own baseurl.
-
-See docs/INSTALL.md for the full setup instructions.
+Open `dist/index.html` for a local preview. Commit the source changes and regenerated `dist/` files to `main`; GitHub Actions publishes the website to GitHub Pages automatically.
 
 ## Credits
 
-Built from [al-folio](https://github.com/alshedivat/al-folio), distributed under the MIT license.
-
-## GitHub Pages
-
-The `.github/workflows/pages.yml` workflow publishes the static files in `dist/` whenever `main` changes. Repository Settings → Pages must use **GitHub Actions** as the publishing source.
-
-After editing content or assets, run `python3 tools/render_preview.py` and commit both the source changes and the regenerated `dist/` files. The workflow publishes that export directly, without requiring a Jekyll build.
-
-## Build validation
-
-The three-page static export in `dist/` passed local asset/link checks, JavaScript syntax checks, and the upstream starter style contract. The native Jekyll build has not been validated on this Mac; it requires the Ruby, Bundler, and npm dependencies described above.
+Based on [al-folio](https://github.com/alshedivat/al-folio). See [LICENSE](LICENSE) for license details.

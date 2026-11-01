@@ -1,0 +1,69 @@
+:root {
+  --max-content-width: 900px;
+  --global-theme-color: #2563eb;
+  --global-hover-color: #1d4ed8;
+  --global-code-bg-color: rgba(37, 99, 235, 0.07);
+}
+html[data-theme="dark"] {
+  --global-theme-color: #60a5fa;
+  --global-hover-color: #93c5fd;
+  --global-code-bg-color: rgba(96, 165, 250, 0.12);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; padding: 0; background: var(--global-bg-color); color: var(--global-text-color); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 17px; line-height: 1.7; }
+.container { width: min(100% - 48px, 900px); margin-left: auto; margin-right: auto; }
+.site-header { border-bottom: 1px solid var(--global-divider-color); }
+.site-nav { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.site-brand { color: var(--global-text-color); font-size: 22px; font-weight: 300; white-space: nowrap; }
+.site-brand strong { font-weight: 650; }
+.site-brand:hover { text-decoration: none; color: var(--global-theme-color); }
+.site-nav-links { display: flex; align-items: center; gap: 27px; }
+.site-nav-link { color: var(--global-text-color); font-size: 15px; text-decoration: none; padding: 20px 0; }
+.site-nav-link.active { color: var(--global-theme-color); font-weight: 600; }
+.site-nav-link:hover { color: var(--global-theme-color); text-decoration: none; }
+.theme-toggle { appearance: none; display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 34px; padding: 3px; border: 0; background: transparent; color: var(--global-text-color); cursor: pointer; border-radius: 4px; }
+.theme-toggle:hover { background: var(--global-code-bg-color); }
+.site-main { margin-top: 52px; min-height: calc(100vh - 230px); }
+.post-header { margin-bottom: 31px; }
+.post-header .post-title { font-size: 48px; letter-spacing: -1.6px; font-weight: 300; line-height: 1.2; margin: 0 0 10px; }
+.post-header .post-title strong { font-weight: 650; }
+.post-header .desc { margin: 0; font-size: 16px; color: var(--global-text-color-light); }
+.site-content p { margin: 0 0 17px; }
+.site-content strong { font-weight: 600; }
+.site-content h2 { font-size: 26px; font-weight: 500; margin: 32px 0 15px; }
+.site-content h3 { font-size: 22px; font-weight: 500; margin: 29px 0 12px; }
+.site-content ul { padding-left: 23px; margin: 9px 0 21px; list-style: disc; }
+.site-content li { margin-bottom: 5px; }
+.site-content a, .site-footer a, .desc a { color: var(--global-theme-color); }
+.site-content a:hover, .site-footer a:hover { text-decoration: underline; }
+.site-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; margin-top: 51px; padding: 19px 0 23px; border-top: 1px solid var(--global-divider-color); font-size: 12px; color: var(--global-text-color-light); }
+.cv-section + .cv-section { margin-top: 34px; }
+.cv-section > h2 { padding-bottom: 9px; border-bottom: 1px solid var(--global-divider-color); font-size: 23px; }
+.cv-entry { display: grid; grid-template-columns: 120px minmax(0,1fr); gap: 22px; padding: 7px 0 4px; }
+.cv-entry h3 { margin-top: 0; font-size: 19px; }
+.cv-date, .muted { color: var(--global-text-color-light); font-size: 15px; }
+.cv-date { padding-top: 2px; }
+.skills { display: grid; grid-template-columns: 210px minmax(0,1fr); gap: 10px 18px; }
+.skills dt { font-weight: 500; }
+.skills dd { margin: 0; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--global-theme-color); outline-offset: 5px; }
+.skip-link { position: absolute; left: 15px; top: -70px; z-index: 20; padding: 8px 14px; background: var(--global-bg-color); color: var(--global-theme-color); border: 1px solid currentColor; }
+.skip-link:focus { top: 10px; }
+@media (max-width: 600px) {
+  .container { width: calc(100% - 32px); }
+  .site-nav { min-height: 64px; gap: 9px; }
+  .site-brand { font-size: 20px; }
+  .site-nav-links { gap: 14px; }
+  .site-nav-link { font-size: 14px; padding: 18px 0; }
+  .theme-toggle { width: 25px; }
+  .site-main { margin-top: 34px; }
+  .post-header .post-title { font-size: 40px; }
+  body { font-size: 16px; line-height: 1.65; }
+  .site-content h3 { font-size: 21px; }
+  .cv-entry { grid-template-columns: 87px minmax(0,1fr); gap: 12px; }
+  .cv-date { font-size: 12px; }
+  .skills { grid-template-columns: 1fr; gap: 3px; }
+  .skills dd { margin-bottom: 12px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

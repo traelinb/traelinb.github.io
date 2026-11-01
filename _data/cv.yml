@@ -1,0 +1,47 @@
+cv:
+  name: Hang Yi
+  label: Undergraduate in Data Science and Big Data Technology
+  location: Shanghai, China
+  summary: Undergraduate at Tongji University working on tabular data synthesis, baseline reproduction, and reproducible experiment pipelines.
+  social_networks:
+    - network: GitHub
+      username: traelinb
+    - network: LinkedIn
+      username: hang-yi-4aa0093b8
+  sections:
+    Education:
+      - institution: Tongji University
+        location: Shanghai, China
+        url: https://www.tongji.edu.cn/
+        area: Data Science and Big Data Technology
+        studyType: Undergraduate
+        start_date: "2025-09"
+        end_date: present
+        highlights:
+          - Guohao College
+      - institution: Xiamen Shuangshi High School, Fujian
+        location: Xiamen, Fujian, China
+        studyType: High school
+        start_date: "2022-09"
+        end_date: "2025-07"
+    Experience:
+      - company: Tabular data synthesis research
+        position: Undergraduate research contributor
+        location: Tongji University, Shanghai, China
+        start_date: "2026-07"
+        end_date: present
+        highlights:
+          - Reproduce and run generative baselines for tabular data.
+          - Prepare datasets and explicit numerical and categorical metadata.
+          - Develop reusable training, checkpointing, and seeded sampling workflows.
+          - Evaluate statistical fidelity across repeated synthetic samples.
+    Skills:
+      - name: Programming
+        keywords: Python, C++
+      - name: Machine learning and data
+        keywords: PyTorch, pandas, NumPy, SDV
+      - name: Experiment tools
+        keywords: Git, Conda, Linux, tmux
+    Languages:
+      - name: English
+        summary: "IELTS overall: 6.5"

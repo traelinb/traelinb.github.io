@@ -1,0 +1,71 @@
+{
+  "basics": {
+    "name": "Hang Yi",
+    "label": "Undergraduate in Data Science and Big Data Technology",
+    "url": "https://github.com/traelinb",
+    "summary": "Undergraduate at Tongji University working on tabular data synthesis and reproducible experiments.",
+    "location": {
+      "city": "Shanghai",
+      "countryCode": "CN"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "traelinb",
+        "url": "https://github.com/traelinb"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "hang-yi-4aa0093b8",
+        "url": "https://www.linkedin.com/in/hang-yi-4aa0093b8/"
+      }
+    ]
+  },
+  "education": [
+    {
+      "institution": "Tongji University",
+      "area": "Data Science and Big Data Technology",
+      "studyType": "Undergraduate",
+      "startDate": "2025-09"
+    },
+    {
+      "institution": "Xiamen Shuangshi High School, Fujian",
+      "studyType": "High school",
+      "startDate": "2022-09",
+      "endDate": "2025-07"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming",
+      "keywords": [
+        "Python",
+        "C++"
+      ]
+    },
+    {
+      "name": "Machine learning and data",
+      "keywords": [
+        "PyTorch",
+        "pandas",
+        "NumPy",
+        "SDV"
+      ]
+    },
+    {
+      "name": "Experiment tools",
+      "keywords": [
+        "Git",
+        "Conda",
+        "Linux",
+        "tmux"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "IELTS overall: 6.5"
+    }
+  ]
+}
